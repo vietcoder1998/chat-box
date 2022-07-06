@@ -1,0 +1,30 @@
+#boxChat {
+    border: solid gray 1px;
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    right: 100px;
+    padding: 10px;
+}
+
+form {
+    margin-bottom: 10px;
+}
+
+#createBox {
+    padding: 10px;
+    border: solid gray 1px;
+}
+
+.show {
+    display: visible;
+}
+
+.messages {
+    border: solid gray 1px;
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
