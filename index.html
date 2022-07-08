@@ -2,29 +2,35 @@
 <html>
     <body>
         <div id="boxChat">
-            <h4> Message </h4>
-            <div class="action">
-                <input 
-                    id="add" 
-                    type="text" 
-                    placeholder="Enter room name..." 
-                    onchange="e => addRoom(e)"
-                />
-                <input 
-                    id="find"
-                    type="search" 
-                    placeholder="Find room ..."
-                    onchange="e => findRoom(e)"
-                />
+            <div class="container">
+                <p> <label>Message</label> </p>
+                <div class="action">
+                    <input 
+                        id="add" 
+                        type="text" 
+                        placeholder="Enter room name..." 
+                        onchange="e => addRoom(e)"
+                    />
+                    <input 
+                        id="find"
+                        type="search" 
+                        placeholder="Find room ..."
+                        onchange="e => findRoom(e)"
+                    />
+                </div>
+                <p>
+                    <span>Id: </span>
+                    <label id="yRoomId"></label>
+                </p>
+                <main >
+                    <ul id="yMessages">
+                    </ul>
+                </main>
+                <div class="yMsgWrite">
+                    <textarea id="yMessageContent" placeholder="Typing message" ></textarea>
+                    <button onclick="sendMessageAction()">Send</button>
+                </div>
             </div>
-            <main >
-                <ul class="messages">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </main>
         </div>
     </body>
     <script src="./chat.js"></script>

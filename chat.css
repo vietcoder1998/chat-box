@@ -1,19 +1,39 @@
 #boxChat {
     border: solid gray 1px;
     width: 400px;
-    height: 300px;
     position: absolute;
     right: 100px;
     padding: 10px;
+    display: block;
 }
 
 form {
     margin-bottom: 10px;
 }
 
+#yMessages {
+    height: 175px;
+    overflow-y: auto;
+}
+
+.container {
+    position: relative;
+    height: 90%;
+}
+
+.send {
+    height: 100%;
+}
+
 #createBox {
     padding: 10px;
     border: solid gray 1px;
+}
+
+.yMsgWrite {
+    bottom: 0px;
+    align-self: center;
+    display: flex;
 }
 
 .show {
